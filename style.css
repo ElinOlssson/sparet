@@ -40,6 +40,11 @@
 
 /* DESKTOP */
 @media (min-width: 768px) {
+  .site-header {
+    margin-top: 87px;
+    margin-left: 37px;
+    margin-right: 37px;
+  }
   .nav-left_category {
     display: flex;
     gap: 24px;
