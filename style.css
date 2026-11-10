@@ -1,0 +1,24 @@
+* { 
+  box-sizing: border-box; 
+};
+
+:root {
+  --color-bg-primary:;
+  --color-bg-secondary: #C8C4B7;
+
+
+  /* Text colors */
+  --color-text-primary: #000000;
+  --color-text-secondary: ;
+
+  /* Brand colors */
+  --color-primary: #C0E703;
+  --color-secondary: #2D99A3;
+  --color-accent: #0C4651;
+  --color-third: #252525;
+
+
+
+  /* Border colors */
+  --color-border: 
+};
