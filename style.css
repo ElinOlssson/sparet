@@ -22,3 +22,9 @@
   /* Border colors */
   --color-border: 
 };
+
+
+/* DESKTOP */ 
+@media (min-width: 768px) {
+
+}
