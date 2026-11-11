@@ -1,30 +1,99 @@
-* { 
-  box-sizing: border-box; 
-};
+* {
+  box-sizing: border-box;
+}
 
 :root {
-  --color-bg-primary:;
-  --color-bg-secondary: #C8C4B7;
-
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #c8c4b7;
 
   /* Text colors */
   --color-text-primary: #000000;
-  --color-text-secondary: ;
+  --color-text-secondary: #252525;
 
   /* Brand colors */
-  --color-primary: #C0E703;
-  --color-secondary: #2D99A3;
-  --color-accent: #0C4651;
+  --color-primary: #c0e703;
+  --color-secondary: #2d99a3;
+  --color-accent: #0c4651;
   --color-third: #252525;
+}
 
+/* =========================
+   BANNER - MOBILE FIRST
+========================= */
 
+.banner {
+  width: 100%;
+  height: 328px;
+  background-color: #d9d9d9;
 
-  /* Border colors */
-  --color-border: 
-};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
+  padding: 50px 20px 37px;
+}
 
-/* DESKTOP */ 
+.banner-title {
+  color: var(--color-text-primary);
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.banner-button {
+  background-color: #aaaaaa;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+}
+
+/* =========================
+   BODY TEXT - MOBILE FIRST
+========================= */
+
+.body-text {
+  padding: 32px 16px;
+}
+
+.body-text_content {
+  width: 100%;
+  max-width: 588px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 30px;
+
+  color: var(--color-text-primary);
+  text-align: left;
+  margin: 0;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
 @media (min-width: 768px) {
+  .banner {
+    height: 624px;
+    padding: 100px 20px 40px;
+  }
 
+  .banner-title {
+    font-size: 64px;
+  }
+
+  .banner-button {
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  .body-text_content {
+    font-size: 48px;
+    line-height: 48px;
+  }
 }
