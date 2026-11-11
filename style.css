@@ -3,19 +3,22 @@
 }
 
 :root {
-  --color-bg-primary: black;
+  --color-bg-primary: #ffffff;
   --color-bg-secondary: #c8c4b7;
 
   /* Text colors */
   --color-text-primary: #000000;
-  --color-text-secondaty: #ffffff;
+  --color-text-secondary: #252525;
 
   /* Brand colors */
   --color-primary: #c0e703;
-  --color-secondary: #0c4651;
+  --color-secondary: #2d99a3;
+  --color-accent: #0c4651;
   --color-complement: #2d99a3;
   --color-third: #252525;
 }
+
+/* HEADER AND NAVIGATION */
 
 .site-header {
   display: flex;
@@ -52,8 +55,10 @@
   background-color: white;
 }
 
+/* HERO */
+
 .hero {
-  margin-top: 0px;
+  margin-top: 0;
   height: 577px;
   background-color: beige;
 }
@@ -88,6 +93,7 @@
     display: flex;
     align-items: center;
   }
+
   .nav-left_category {
     display: flex;
     gap: 22px;
@@ -99,7 +105,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19.7px; /* 140.714% */
+    line-height: 19.7px;
   }
 
   .nav-left img {
@@ -124,7 +130,7 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 19.7px; /* 140.714% */
+    line-height: 19.7px;
   }
 
   .product-grid {
