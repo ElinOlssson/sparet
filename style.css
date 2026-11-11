@@ -14,12 +14,60 @@
   --color-primary: #c0e703;
   --color-secondary: #2d99a3;
   --color-accent: #0c4651;
+  --color-complement: #2d99a3;
   --color-third: #252525;
 }
 
-/* =========================
-   BANNER - MOBILE FIRST
-========================= */
+/* HEADER AND NAVIGATION */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.nav-left img {
+  display: block;
+  background-color: #ffffff;
+}
+
+.nav-left_category {
+  display: none;
+}
+
+.logo {
+  color: white;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.nav-right_contact {
+  display: none;
+}
+
+.nav-right_icons {
+  display: flex;
+  gap: 22px;
+  background-color: white;
+}
+
+/* HERO */
+
+.hero {
+  margin-top: 0;
+  height: 577px;
+  background-color: beige;
+}
+
+.hero h1 {
+  margin-top: 0;
+}
+
+/* BANNER - MOBILE FIRST */
 
 .banner {
   width: 100%;
@@ -51,9 +99,7 @@
   font-size: 16px;
 }
 
-/* =========================
-   BODY TEXT - MOBILE FIRST
-========================= */
+/* BODY TEXT - MOBILE FIRST */
 
 .body-text {
   padding: 32px 16px;
@@ -73,9 +119,9 @@
   margin: 0;
 }
 
-/* =========================
-   DESKTOP
-========================= */
+/* 
+   DESKTOP - BANNER
+*/
 
 @media (min-width: 768px) {
   .banner {
@@ -95,5 +141,60 @@
   .body-text_content {
     font-size: 48px;
     line-height: 48px;
+  }
+}
+
+/* DESKTOP - HEADER AND NAVIGATION */
+
+@media (min-width: 780px) {
+  .site-header {
+    padding-top: 87px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 15px;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-left_category {
+    display: flex;
+    gap: 22px;
+  }
+
+  .nav-left_category a {
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.7px;
+  }
+
+  .nav-left img {
+    display: none;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav-right_contact {
+    display: flex;
+    font-size: 14px;
+    gap: 22px;
+  }
+
+  .nav-right_contact a {
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.7px;
   }
 }
