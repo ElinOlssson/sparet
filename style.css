@@ -243,6 +243,9 @@
   .header-top {
     display: flex;
     justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
   }
 
   .nav-left {
