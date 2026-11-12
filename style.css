@@ -38,8 +38,8 @@
 
 .nav-left img {
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
   filter: brightness(0) invert(1);
 }
 
@@ -64,12 +64,12 @@
 .nav-right_icons {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
 }
 
 .nav-right_icons img {
-  width: 24px;
-  height: 24px;
+  width: 19px;
+  height: 19px;
 }
 
 /* HERO */
@@ -255,6 +255,11 @@
     font-style: normal;
     font-weight: 300;
     line-height: 34px; /* 121.429% */
+  }
+
+  .nav-right_icons img {
+    width: 24px;
+    height: 24px;
   }
 
   .nav-left_category {
