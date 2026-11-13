@@ -370,3 +370,49 @@
     height: 344px;
   }
 }
+
+/* Category grid Mobile first*/
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+.category-card {
+  width: 100%;
+  min-width: 0;
+  aspect-ratio: 1 / 1;
+  background-color: #d9d9d9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  padding: 16px;
+}
+
+.category-card_text {
+  margin-bottom: 8px;
+}
+
+.category-card_h4 {
+  margin-bottom: 16px;
+}
+.category-card_button {
+  display: inline-block;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+/* CATEGORY - DESKTOP */
+
+@media (min-width: 780px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
