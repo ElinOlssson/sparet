@@ -235,7 +235,6 @@
   margin-top: auto;
 }
 
-HEAD
 .category-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -244,17 +243,11 @@ HEAD
 }
 
 .category-card {
-  width: 100%;
-  min-width: 0;
-  aspect-ratio: 1 / 1;
-  background-color: #d9d9d9;
-
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-start;
-
   padding: 16px;
+  min-height: 200px;
+  background-color: #d9d9d9;
 }
 
 .category-card_text {
@@ -266,13 +259,12 @@ HEAD
 }
 .category-card_button {
   display: inline-block;
+  align-self: flex-start;
   padding: 10px 24px;
   border: none;
   cursor: pointer;
 }
 
-
-origin/dev
 /* DESKTOP - ALL SECTIONS */
 
 @media (min-width: 1040px) {
@@ -373,12 +365,13 @@ origin/dev
     min-width: 0;
     height: 344px;
   }
-HEAD
 
   /* CATEGORY - DESKTOP */
 
   .category-grid {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 24px;
   }
 
@@ -391,5 +384,5 @@ HEAD
     border: 1px solid #252525;
     border-radius: 4px;
     font-size: 16px;
-  }origin/dev
+  }
 }
