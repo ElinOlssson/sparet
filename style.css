@@ -32,33 +32,18 @@
   padding: 20px 16px;
 }
 
-.nav-left {
-  justify-self: start;
-}
-
-.nav-left img {
-  display: block;
-  width: 19px;
-  height: 19px;
-  filter: brightness(0) invert(1);
-}
-
 .logo {
-  justify-self: center;
-  color: white;
-  font-family: Montserrat;
-  font-size: calc(18rem / 16);
-  font-style: normal;
+  color: #252525;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
   font-weight: 300;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 
 .nav-right {
-  justify-self: end;
-}
-
-.nav-left_category {
-  display: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .nav-right_icons {
@@ -68,20 +53,51 @@
 }
 
 .nav-right_icons img {
+  display: block;
   width: 19px;
   height: 19px;
+}
+
+.hamburgermenu {
+  display: flex;
+  align-items: center;
+}
+
+.hamburgermenu img {
+  display: block;
+  width: 19px;
+  height: 19px;
+}
+
+.nav-left_category {
+  display: none;
 }
 
 /* HERO */
 
 .hero {
-  margin-top: 0;
   height: 577px;
   background-color: #aaaaaa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.hero-text {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .hero h1 {
-  margin-top: 0;
+  margin: 0;
+}
+
+.introduction-text {
+  
 }
 
 .products {
@@ -287,7 +303,7 @@
     margin-top: 25px;
   }
 
-  .nav-left {
+  .hamburgermenu {
     display: none;
   }
 
