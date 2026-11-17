@@ -120,7 +120,7 @@
 
 .hero-text_text {
   font-family: var(--font-primary);
-  font-size: calc(18rem/16);
+  font-size: calc(18rem / 16);
   font-weight: var(--font-weight-medium);
 }
 
@@ -128,14 +128,14 @@
   margin: 0;
   width: 306px;
   font-family: var(--font-secondary);
-  font-size: calc(40rem/16);
+  font-size: calc(40rem / 16);
   font-weight: var(--font-weight-bold);
 }
 
 .hero-button {
   background-color: var(--color-secondary);
   font-family: var(--font-primary);
-  font-size: calc(14rem/16);
+  font-size: calc(14rem / 16);
   font-style: normal;
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-16);
@@ -166,7 +166,7 @@
 .products-title {
   margin: 0 0 16px;
   font-family: "DM Sans", sans-serif;
-  font-size: 22px;
+  font-size: calc(22rem / 16);
   font-weight: var(--font-size-regular);
   font-style: normal;
 }
@@ -187,10 +187,11 @@
 .product-card_image {
   position: relative;
   width: 100%;
+  height: auto;
   overflow: hidden;
 }
 
-.product-card_image img {
+.product-card_image > img {
   display: block;
   width: 100%;
   height: auto;
@@ -198,6 +199,23 @@
 
 .product-card_image .image-hover {
   display: none;
+}
+
+.product-card_heart {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2;
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.product-card_heart img {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /* BANNER */
@@ -427,24 +445,22 @@
     gap: 30px;
   }
 
+  .hero-text {
+    gap: 37px;
+  }
 
-.hero-text {
-  gap: 37px;
-}
+  .hero-text_text {
+    font-size: calc(20rem / 16);
+  }
 
-.hero-text_text {
-  font-size: calc(20rem/16);
-}
+  .hero h1 {
+    width: 100%;
+    font-size: calc(64rem / 16);
+  }
 
-.hero h1 {
-  width: 100%;
-  font-size: calc(64rem/16);
-}
-
-.hero-button {
-  font-size: calc(16rem/16);
-}
-
+  .hero-button {
+    font-size: calc(16rem / 16);
+  }
 
   /* INTROTEXT */
 
@@ -467,10 +483,7 @@
   }
 
   .products-title {
-    font-family: "DM Sans", sans-serif;
-    font-size: 36px;
-    font-weight: var(--font-size-regular);
-    font-style: normal;
+    font-size: calc(28rem / 16);
     margin-bottom: 46px;
   }
 
@@ -489,20 +502,15 @@
 
   .product-card_image {
     width: 330px;
-    height: 488px;
   }
 
-  .image-hover {
+  .product-card_image .image-hover {
     display: block;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
-  }
-
-  .product-card_image .image-hover {
-    display: block;
   }
 
   .product-card_image:hover .image-hover {
