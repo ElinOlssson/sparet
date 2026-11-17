@@ -96,13 +96,20 @@
   margin: 0;
 }
 
+.introduction {
+  margin: 113px auto 0;
+  padding: 0;
+}
+
 .introduction-text {
-  
+  font-size: 36px;
+  line-height: 1;
 }
 
 .products {
-  max-width: 1150px;
-  margin: 0 auto;
+  width: 1053px;
+  margin: 144px auto 0;
+  padding: 0;
 }
 
 .products-title {
@@ -292,7 +299,7 @@
 
 /* DESKTOP - ALL SECTIONS */
 
-@media (min-width: 1040px) {
+@media (min-width: 1024px) {
   /* HEADER AND NAVIGATION */
 
   .header-top {
@@ -337,15 +344,47 @@
     text-decoration: none;
   }
 
+  /* INTROTEXT */
+
+  .introduction {
+    width: 1053px;
+    margin: 113px auto 0;
+    padding: 0;
+  }
+
+  .introduction-text {
+    max-width: 50%;
+    font-size: 36px;
+    line-height: 1;
+    margin: 0;
+  }
+
   /* PRODUCTS */
+  .products {
+    width: 1053px;
+    margin: 109px auto 0;
+    padding: 0;
+  }
+
+  .products-title {
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-weight: <weight>;
+    font-style: normal;
+    margin-bottom: 46px;
+  }
 
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 330px);
-    justify-content: center;
-    row-gap: 80px;
-    column-gap: 68px;
+    grid-template-columns: repeat(3, 297px);
+    column-gap: 81px;
+    row-gap: 46px;
     overflow: visible;
+  }
+
+  .product-card {
+    width: 297px;
+    height: 488px;
   }
 
   /* BANNER */
