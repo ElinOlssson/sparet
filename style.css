@@ -244,6 +244,36 @@
   margin-top: auto;
 }
 
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+.category-card {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  min-height: 200px;
+  background-color: #d9d9d9;
+}
+
+.category-card_text {
+  margin-bottom: 8px;
+}
+
+.category-card_h4 {
+  margin-bottom: 16px;
+}
+.category-card_button {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+}
+
 /* DESKTOP - ALL SECTIONS */
 
 @media (min-width: 1040px) {
@@ -345,5 +375,25 @@
     flex: 1 1 0;
     min-width: 0;
     height: 344px;
+  }
+
+  /* CATEGORY - DESKTOP */
+
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+  }
+
+  /* Campaign-email*/
+
+  .campaign-email {
+    width: 100%;
+    /*max-width: 800px;*/
+    padding: 14px 16px;
+    border: 1px solid #252525;
+    border-radius: 4px;
+    font-size: 16px;
   }
 }
