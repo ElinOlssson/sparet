@@ -17,7 +17,7 @@
   --color-complement: #c0d6eb;
   --color-complement-2: #012233;
 
-    /* FONT FAMILIES */
+  /* FONT FAMILIES */
   --font-primary: "DM Sans", sans-serif;
   --font-secondary: "Chakra Petch", sans-serif;
 
@@ -115,11 +115,34 @@
 .hero-text {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 24px;
+}
+
+.hero-text_text {
+  font-family: var(--font-primary);
+  font-size: calc(18rem/16);
+  font-weight: var(--font-weight-medium);
 }
 
 .hero h1 {
   margin: 0;
+  width: 306px;
+  font-family: var(--font-secondary);
+  font-size: calc(40rem/16);
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-button {
+  background-color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: calc(14rem/16);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-16);
+}
+
+.hero-button:hover {
+  background-color: var(--color-accent);
 }
 
 .introduction {
@@ -142,11 +165,11 @@
 
 .products-title {
   margin: 0 0 16px;
-    font-family: "DM Sans", sans-serif;
-    font-size: 22px;
-    font-weight: var(--font-size-regular);
-    font-style: normal;
-  }
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: var(--font-size-regular);
+  font-style: normal;
+}
 
 .product-grid {
   display: flex;
@@ -385,24 +408,43 @@
 
   .nav-left_category a {
     color: white;
-    font-family: "Montserrat", sans-serif;
-    font-size: calc(14rem / 16);
-    font-weight: 400;
-    line-height: 1.375rem;
+    font-family: var(--font-primary);
+    font-size: calc(16rem / 16);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-24);
     text-decoration: none;
   }
   /* HERO */
 
   .hero {
-  height: 577px;
-  background-color: #aaaaaa;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 30px;
+    height: 577px;
+    background-color: #aaaaaa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+
+.hero-text {
+  gap: 37px;
 }
+
+.hero-text_text {
+  font-size: calc(20rem/16);
+}
+
+.hero h1 {
+  width: 100%;
+  font-size: calc(64rem/16);
+}
+
+.hero-button {
+  font-size: calc(16rem/16);
+}
+
 
   /* INTROTEXT */
 
@@ -452,20 +494,20 @@
 
   .image-hover {
     display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
 
-.product-card_image .image-hover {
-  display: block;
-}
+  .product-card_image .image-hover {
+    display: block;
+  }
 
-.product-card_image:hover .image-hover {
-  opacity: 1;
-}
+  .product-card_image:hover .image-hover {
+    opacity: 1;
+  }
 
   /* BANNER */
   .banner {
