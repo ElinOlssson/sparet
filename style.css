@@ -84,6 +84,15 @@
   margin-top: 0;
 }
 
+.products {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.products-title {
+  margin: 0 0 16px;
+}
+
 .product-grid {
   display: flex;
   gap: 16px;
@@ -286,8 +295,10 @@
 
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: center;
+    row-gap: 80px;
+    column-gap: 68px;
     overflow: visible;
   }
 
