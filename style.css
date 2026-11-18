@@ -239,10 +239,10 @@
 .banner-title {
   width: 321px;
   color: #252525;
-  font-family: "Chakra Petch", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 40px;
-  font-weight: 700;
-  line-height: 44px;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-44);
   letter-spacing: 0;
 }
 
@@ -251,7 +251,7 @@
 .banner-text {
   width: 100%;
   color: #252525;
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-primary);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -562,8 +562,6 @@
     overflow: visible;
   }
 
-  /* DESKTOP BANNER */
-
   .product-card {
     width: 330px;
     height: 568px;
@@ -602,7 +600,7 @@
     width: 937px;
     font-size: 64px;
     text-align: left;
-    font-family: "chackra petch", sans-serif;
+    font-family: var(--font-secondary);
     font-style: normal;
     font-weight: 700;
     line-height: 72px;
@@ -614,7 +612,7 @@
   .banner-description,
   .banner-text {
     color: #252525;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-primary);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
