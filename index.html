@@ -8,30 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
       rel="stylesheet"
     />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
       <div class="header-top">
-        <div class="nav-left">
-          <img src="image/Startsida/Ikon/Meny.svg" alt="Meny" />
-        </div>
-
         <div class="logo">LOGO</div>
 
         <nav class="nav-right">
           <div class="nav-right_icons">
             <img src="image/Startsida/MagnifyingGlass.svg" alt="Sök" />
-            <img src="image/Startsida/ShoppingBag.svg" alt="Varukorg" />
             <img src="image/Startsida/Heart-1.svg" alt="Favoriter" />
+            <img src="image/Startsida/ShoppingBag.svg" alt="Varukorg" />
+          </div>
+
+          <div class="hamburgermenu">
+            <img src="image/Startsida/Vector.svg" alt="Meny" />
           </div>
         </nav>
       </div>
@@ -48,68 +49,175 @@
     <main>
       <section class="hero">
         <div class="hero-text">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="hero-text_text">Design</div>
+          <div class="hero-text_text">Funktion</div>
+          <div class="hero-text_text">Hållbarhet</div>
         </div>
-        <h1>Headline</h1>
+        <h1>Ett nytt spår tar form</h1>
         <button class="hero-button">CTA</button>
       </section>
 
       <section class="introduction">
-        <h3>hehehheheheh</h3>
+        <p class="introduction-text">
+          Vi tror att bra design ska kännas lika bra som den ser ut. Därför
+          finns det en tanke bakom varje detalj.
+        </p>
       </section>
-
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+      <section class="products">
+        <h5 class="products-title">Limiterad kollektion</h5>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/Startsida/bilder/image 127.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/Startsida/bilder/image 129.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Startsida/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color">animation</div>
           </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
         </div>
-      </div>
+      </section>
 
       <section class="banner">
         <div class="banner-content">
