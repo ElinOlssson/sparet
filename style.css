@@ -84,7 +84,7 @@
 .nav-right_icons {
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
 }
 
 .nav-right_icons img {
@@ -184,11 +184,11 @@
 }
 
 .products-title {
-  margin: 0 0 16px;
   font-family: "DM Sans", sans-serif;
   font-size: calc(22rem / 16);
   font-weight: var(--font-size-regular);
   font-style: normal;
+  margin: 0;
 }
 
 .product-grid {
@@ -492,8 +492,8 @@
   }
 
   .nav-right_icons img {
-    width: 24px;
-    height: 24px;
+    width: 19.139px;
+    height: 19.139px;
   }
 
   .nav-left_category {
@@ -525,6 +525,16 @@
     text-align: center;
     gap: 30px;
   }
+
+  .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
 
   .hero-text {
     gap: 37px;
@@ -565,7 +575,7 @@
 
   .products-title {
     font-size: calc(28rem / 16);
-    margin-bottom: 46px;
+    padding-bottom: 20px;
   }
 
   .product-grid {
