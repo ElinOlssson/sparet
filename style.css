@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0%;
 }
 
 :root {
@@ -139,12 +140,14 @@
 }
 
 .hero-text_text {
+  color: var(--color-bg-primary);
   font-family: var(--font-primary);
   font-size: calc(18rem / 16);
   font-weight: var(--font-weight-medium);
 }
 
 .hero h1 {
+  color: var(--color-accent);
   margin: 0;
   width: 306px;
   font-family: var(--font-secondary);
