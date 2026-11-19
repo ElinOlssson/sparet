@@ -342,21 +342,24 @@
 }
 
 .body-text {
+  width: 100%;
   padding: 32px 16px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .body-text_content {
   width: 100%;
-  max-width: 588px;
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 30px;
+  max-width: 772px;
+  font-family: var(--font-secondary);
+  font-size: clamp(26px, calc(20.22px + 1.54vw), 36px);
+  font-weight: var(--font-weight-medium);
+  line-height: clamp(32px, calc(25.06px + 1.85vw), 44px);
+  letter-spacing: 0;
   color: var(--color-text-primary);
   text-align: left;
   margin: 0;
 }
-
 /* REVIEWS */
 
 .review {
@@ -680,58 +683,67 @@
     font-weight: 400;
     line-height: 16px;
   }
-}
 
-/* REVIEWS*/
+  /* REVIEWS*/
 
-.review {
-  min-height: 448px;
-  height: auto;
-  padding: 52px 97px;
-}
+  .review {
+    min-height: 448px;
+    height: auto;
+    padding: 52px 97px;
+  }
 
-.review-title {
-  font-size: 28px;
-}
+  .review-title {
+    font-size: 28px;
+  }
 
-.review-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-  overflow: visible;
-}
+  .review-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    overflow: visible;
+  }
 
-.review-card {
-  flex: 1 1 0;
-  min-width: 0;
-  height: 344px;
-}
+  .review-card {
+    flex: 1 1 0;
+    min-width: 0;
+    height: 344px;
+  }
 
-/* CATEGORY - DESKTOP */
+  /* CATEGORY - DESKTOP */
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 24px;
-}
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+  }
 
-/* Campaign-email*/
+  /* Campaign-email*/
 
-.campaign-email {
-  width: 100%;
-  max-width: 1406px;
-  height: 47px;
-  padding: 14px 16px;
-  border: 1px solid #252525;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
+  .campaign-email {
+    width: 100%;
+    max-width: 1406px;
+    height: 47px;
+    padding: 14px 16px;
+    border: 1px solid #252525;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
 
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .body-text {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
