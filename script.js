@@ -8,9 +8,9 @@ hearts.forEach((heart) => {
     const heartImage = heart.querySelector("img");
 
     if (isActive) {
-      heartImage.src = "image/Startsida/Heart_filled.svg";
+      heartImage.src = "image/Ikon/Heartfilled.svg";
     } else {
-      heartImage.src = "image/Startsida/Heart.svg";
+      heartImage.src = "image/Ikon/Heart.svg";
     }
 
     heart.setAttribute("aria-pressed", isActive);

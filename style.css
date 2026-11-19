@@ -22,10 +22,19 @@
   --font-secondary: "Chakra Petch", sans-serif;
 
   /* FONT SIZES */
-  --font-size-small: 14px;
-  --font-size-regular: 16px;
-  --font-size-large: 26px;
-  --font-size-heading: 36px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-26: 26px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  --font-size-36: 36px;
+  --font-size-40: 40px;
+  --font-size-48: 48px;
+  --font-size-64: 64px;
 
   /* FONT WEIGHTS */
   --font-weight-regular: 400;
@@ -47,7 +56,7 @@
 /* HEADER AND NAVIGATION */
 
 .site-header {
-  background-color: black;
+  background-color: var(--color-primary);
   color: white;
 }
 
@@ -55,15 +64,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 16px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .logo {
-  color: #252525;
-  font-family: var(--font-primary);
-  font-size: 26px;
-  font-weight: var(--font-weight-medium);
-  line-height: 32px;
+  width: 22px;
+  height: auto;
 }
 
 .nav-right {
@@ -102,14 +111,25 @@
 /* HERO */
 
 .hero {
-  height: 488px;
-  background-color: #aaaaaa;
+  position: relative;
+  width: 100%;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
   gap: 30px;
+  text-align: center;
 }
 
 .hero-text {
@@ -181,7 +201,6 @@
   flex-shrink: 0;
   width: 330px;
   height: 488px;
-  background-color: #aaaaaa;
 }
 
 .product-card_image {
@@ -461,9 +480,6 @@
   .header-top {
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-top: 25px;
   }
 
   .hamburgermenu {
@@ -471,11 +487,8 @@
   }
 
   .logo {
-    font-family: Montserrat;
-    font-size: calc(24rem / 16);
-    font-style: normal;
-    font-weight: 300;
-    line-height: 34px; /* 121.429% */
+    width: 42px;
+    height: auto;
   }
 
   .nav-right_icons img {
@@ -487,12 +500,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding: 16px 20px;
+    gap: 38px;
+    padding-top: 22px;
+    padding-bottom: 12px;
   }
 
   .nav-left_category a {
-    color: white;
+    color: var(--color-accent);
     font-family: var(--font-primary);
     font-size: calc(16rem / 16);
     font-weight: var(--font-weight-medium);
@@ -502,8 +516,8 @@
   /* HERO */
 
   .hero {
-    height: 577px;
-    background-color: #aaaaaa;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
