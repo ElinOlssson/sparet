@@ -110,13 +110,13 @@
 }
 
 /* HERO */
-
 .hero {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
-.hero img {
+.hero > img {
   display: block;
   width: 100%;
   height: auto;
@@ -129,15 +129,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 12px;
+  padding: 16px;
   text-align: center;
-  transform: translate(40px, -40px);
+  transform: none;
 }
 
 .hero-text {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  width: 100%;
+}
+
+.hero h1 {
+  color: var(--color-accent);
+  width: 100%;
+  font-family: var(--font-secondary);
+  font-size: clamp(24px, 7vw, 40px);
+  font-weight: var(--font-weight-bold);
 }
 
 .hero-text_text {
@@ -151,31 +162,10 @@
   letter-spacing: 0;
 }
 
-.hero h1 {
-  color: var(--color-accent);
-  margin: 0;
-  width: 306px;
-  font-family: var(--font-secondary);
-  font-size: calc(40rem / 16);
-  font-weight: var(--font-weight-bold);
-}
-
-.hero-button {
-  background-color: var(--color-secondary);
-  font-family: var(--font-primary);
-  font-size: calc(14rem / 16);
-  font-style: normal;
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-16);
-}
-
-.hero-button:hover {
-  background-color: var(--color-accent);
-}
-
 .introduction {
+  width: 100%;
   margin: 76px auto 0;
-  padding: 0;
+  padding: 0 16px;
 }
 
 .introduction-text {
@@ -186,9 +176,9 @@
 }
 
 .products {
-  width: 1053px;
+  width: 100%;
   margin: 72px auto 0;
-  padding: 0;
+  padding: 0 16px;
 }
 
 .products-title {
@@ -580,11 +570,12 @@
 
   /* INTROTEXT */
 
-  .introduction {
-    width: 1053px;
-    margin: 113px auto 0;
-    padding: 0;
-  }
+.introduction {
+  width: 100%;
+  max-width: 1053px;
+  margin: 113px auto 0;
+  padding: 0;
+}
 
   .introduction-text {
     max-width: 70%;
@@ -595,9 +586,10 @@
 
   /* PRODUCTS */
   .products {
+    max-width: 1053px;
     margin: 109px auto 0;
+    padding: 0;
   }
-
   .products-title {
     font-size: calc(28rem / 16);
     padding-bottom: 20px;
@@ -605,19 +597,19 @@
 
   .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 297px);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     column-gap: 81px;
     row-gap: 46px;
     overflow: visible;
   }
 
   .product-card {
-    width: 330px;
-    height: 568px;
+    width: 100%;
+    min-width: 0;
   }
 
   .product-card_image {
-    width: 330px;
+    width: 100%;
   }
 
   .product-card_image .image-hover {
