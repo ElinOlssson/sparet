@@ -129,7 +129,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 12px;
+  gap: 42px;
   padding: 16px;
   text-align: center;
   transform: none;
@@ -160,6 +160,14 @@
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-32);
   letter-spacing: 0;
+}
+
+.hero-button {
+  background-color: var(--color-secondary);
+}
+
+.hero-button:hover {
+  background-color: var(--color-accent);
 }
 
 .introduction {
@@ -233,6 +241,10 @@
   display: block;
   width: 20px;
   height: 20px;
+}
+
+.product-card_name {
+  
 }
 
 /* BANNER */
