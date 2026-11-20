@@ -243,8 +243,15 @@
   height: 20px;
 }
 
-.product-card_name {
-  
+.product-card_name,
+.product-card_pris {
+  color: var(--Base-colors-black, #252525);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-24);
+  letter-spacing: 0;
 }
 
 /* BANNER */
@@ -582,12 +589,12 @@
 
   /* INTROTEXT */
 
-.introduction {
-  width: 100%;
-  max-width: 1053px;
-  margin: 113px auto 0;
-  padding: 0;
-}
+  .introduction {
+    width: 100%;
+    max-width: 1053px;
+    margin: 113px auto 0;
+    padding: 0;
+  }
 
   .introduction-text {
     max-width: 70%;
