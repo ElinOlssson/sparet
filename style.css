@@ -343,16 +343,20 @@
 }
 
 .body-text {
+  width: 100%;
   padding: 32px 16px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .body-text_content {
   width: 100%;
-  max-width: 588px;
-  font-family: "Inter", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 30px;
+  max-width: 772px;
+  font-family: var(--font-secondary);
+  font-size: clamp(26px, calc(20.22px + 1.54vw), 36px);
+  font-weight: var(--font-weight-medium);
+  line-height: clamp(32px, calc(25.06px + 1.85vw), 44px);
+  letter-spacing: 0;
   color: var(--color-text-primary);
   text-align: left;
   margin: 0;
@@ -367,9 +371,9 @@
 }
 
 .review-title {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-primary);
   font-size: 28px;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   margin: 0 0 30px;
 }
 
@@ -386,35 +390,41 @@
 
 .review-card {
   flex: 0 0 100%;
-  min-height: 352px;
-  padding: 24px;
+  height: 344px;
+  padding: 16px 27px 15px 33px;
   background-color: #abaaaa;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 19px;
   text-align: center;
   scroll-snap-align: start;
 }
 
-/* QUOTATION MARK */
+/* QUOTE */
 
-.review-quote::before {
-  content: "❞";
+.review-quote {
   display: block;
-  font-family: Georgia, serif;
-  font-size: 42px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-align: center;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* REVIEW TEXT */
 
 .review-card_text {
-  font-family: "Inter", sans-serif;
-  font-size: 14px;
-  line-height: 1.5;
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+  text-align: center;
 }
 
 /* STARS */
@@ -422,32 +432,39 @@
 .review-card_stars {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5px;
-  font-size: 20px;
 }
 
-.review-card_stars .filled {
-  color: #000000;
-}
-
-.review-card_stars .empty {
-  color: #000000;
+.review-card_stars span {
+  font-size: 20.988px;
+  line-height: 1;
+  color: #252525;
 }
 
 /* CUSTOMER */
 
 .review-card_user {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
+  align-self: stretch;
+  margin: 0;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: var(--font-weight-regular);
+  line-height: 20px;
+  color: var(--color-text-primary);
+  text-align: center;
 }
 
 /* PRODUCT LINK */
 
 .review-card_link {
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  color: #000000;
+  display: flex;
+  align-items: center;
+  padding: 10px 23px 8px 10px;
   margin-top: auto;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--color-text-primary);
 }
 
 .category-grid {
@@ -681,58 +698,105 @@
     font-weight: 400;
     line-height: 16px;
   }
-}
 
-/* REVIEWS*/
+  /* DESKTOP REVIEWS */
+  .review {
+    width: 100%;
+    max-width: 1440px;
+    min-height: 448px;
+    margin: 0 auto;
+    padding: 52px 97px;
+  }
 
-.review {
-  min-height: 448px;
-  height: auto;
-  padding: 52px 97px;
-}
+  .review-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0;
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+  }
 
-.review-title {
-  font-size: 28px;
-}
+  .review-card {
+    width: 100%;
+    max-width: 569px;
+    height: 344px;
+    min-height: 344px;
+    padding: 16px 84px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    scroll-snap-align: none;
+  }
 
-.review-grid {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-  overflow: visible;
-}
+  .review-card_text {
+    width: 382px;
+    max-width: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+  }
 
-.review-card {
-  flex: 1 1 0;
-  min-width: 0;
-  height: 344px;
-}
+  .review-card_user {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-/* CATEGORY - DESKTOP */
+  .review-card_link {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 24px;
-}
+  /* PRODUCT LINK HOVER */
+  .review-card_link {
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
+  }
 
-/* Campaign-email*/
+  .review-card_link:hover {
+    text-decoration: underline;
+  }
 
-.campaign-email {
-  width: 100%;
-  max-width: 1406px;
-  height: 47px;
-  padding: 14px 16px;
-  border: 1px solid #252525;
-  border-radius: 4px;
-  font-size: 16px;
-  box-sizing: border-box;
+  /* CATEGORY - DESKTOP */
 
-  color: #000;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+  }
+
+  /* Campaign-email*/
+
+  .campaign-email {
+    width: 100%;
+    max-width: 1406px;
+    height: 47px;
+    padding: 14px 16px;
+    border: 1px solid #252525;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    color: #000;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .body-text {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 32px 0;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
