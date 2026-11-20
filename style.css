@@ -90,8 +90,8 @@
 
 .nav-right_icons img {
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 16px;
+  height: 14px;
 }
 
 .hamburgermenu {
@@ -101,8 +101,12 @@
 
 .hamburgermenu img {
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 13px;
+  height: 10px;
+}
+
+.nav-right_icons .nav-right_icons_user {
+  display: none;
 }
 
 .nav-left_category {
@@ -116,10 +120,14 @@
   overflow: hidden;
 }
 
-.hero > img {
+.hero_mobile {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero_desktop {
+  display: none;
 }
 
 .hero-content {
@@ -185,7 +193,7 @@
 
 .products {
   width: 100%;
-  margin: 72px auto 0;
+  margin: 72px auto 67px;
   padding: 0 16px;
 }
 
@@ -199,14 +207,15 @@
 
 .product-grid {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .product-card {
   flex-shrink: 0;
   width: 330px;
-  height: 488px;
+  height: auto;
 }
 
 .product-card_image {
@@ -273,12 +282,31 @@
   gap: 4px;
 }
 
+.color-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--swatch-color);
+  cursor: pointer;
+}
+
 .innovation {
   width: 100%;
 }
 
-.innovation img {
+.innovation-mobile {
+  display: block;
   width: 100%;
+  height: auto;
+}
+
+.innovation-desktop {
+  display: none;
 }
 
 /* BANNER */
@@ -547,6 +575,10 @@
     display: none;
   }
 
+  .nav-right_icons .nav-right_icons_user {
+  display: block;
+  }
+
   .logo {
     width: 42px;
     height: auto;
@@ -597,6 +629,15 @@
     padding-bottom: 8px;
   }
 
+  .hero_mobile {
+    display: none;
+  }
+  .hero_desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .hero-text {
     gap: 37px;
   }
@@ -633,7 +674,7 @@
   /* PRODUCTS */
   .products {
     max-width: 1053px;
-    margin: 109px auto 0;
+    margin: 109px auto 286px;
     padding: 0;
   }
   .products-title {
@@ -652,6 +693,7 @@
   .product-card {
     width: 100%;
     min-width: 0;
+    height: auto;
   }
 
   .product-card_image {
@@ -670,6 +712,23 @@
   .product-card_image:hover .image-hover {
     opacity: 1;
   }
+
+  /* Innovation section*/
+
+  .innovation {
+  padding-left: 47px;
+  padding-right: 55px;
+}
+
+  .innovation-desktop {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.innovation-mobile {
+  display: none;
+}
 
   /* BANNER */
   .banner {

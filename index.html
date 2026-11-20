@@ -28,11 +28,11 @@
             <img src="image/Ikon/Sök.svg" alt="Sök" />
             <img src="image/Ikon/heartgreen.svg" alt="Favoriter" />
             <img src="image/Ikon/Varukorg.svg" alt="Varukorg" />
-            <img src="image/Ikon/Vector.svg" />
+            <img class="nav-right_icons_user" src="image/Ikon/Vector.svg" alt="användare"/>
           </div>
 
           <div class="hamburgermenu">
-            <img src="image/Startsida/Vector.svg" alt="Meny" />
+            <img src="image/Ikon/menyicon.svg" alt="Meny" />
           </div>
         </nav>
       </div>
@@ -51,7 +51,10 @@
     </header>
     <main>
       <section class="hero">
-        <img
+        <img class="hero_mobile"
+          src="image/images/hero-bild-mobile.png"
+        />
+        <img class="hero_desktop"
           src="image/images/Dynamisk padelrörelse med gröna sneakers 1.png"
         />
         <div class="hero-content">
@@ -79,12 +82,12 @@
             <div class="product-card_image">
               <img
                 class="image-default"
-                src="image/images/brillorfel.png"
+                src="image/images/solbrillor04.png"
                 alt="Produkt framifrån"
               />
               <img
                 class="image-hover"
-                src="image/images/brillorfel2.png"
+                src="image/images/tjejbrillor0404.png"
                 alt="Produkt från sidan"
               />
               <button
@@ -107,12 +110,64 @@
             <div class="product-card_image">
               <img
                 class="image-default"
-                src="image/images/brillorfel.png"
+                src="image/images/rack4.jpg"
                 alt="Produkt framifrån"
               />
               <img
                 class="image-hover"
-                src="image/images/brillorfel2.png"
+                src="image/images/tjejrack04.jpg"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">namn</div>
+            <div class="product-card_pris">pris</div>
+            <div class="choose-color" id="active-color-picker">
+              <button
+                type="button"
+                class="color-option selected"
+                data-image="image/images/rackblått04.jpg"
+                style="--swatch-color: #0c4651"
+                aria-label="Blå"
+                aria-pressed="true"
+              ></button>
+
+              <button
+                type="button"
+                class="color-option"
+                data-image="image/images/racksvart04.jpg"
+                style="--swatch-color: #252525"
+                aria-label="black"
+                aria-pressed="false"
+              ></button>
+              <button
+                type="button"
+                class="color-option"
+                data-image="image/images/rack4.jpg"
+                style="--swatch-color: #D8A180"
+                aria-label="beige"
+                aria-pressed="false"
+              ></button>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/solkräm04.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/solkrämthjej04.jpg"
                 alt="Produkt från sidan"
               />
               <button
@@ -135,40 +190,12 @@
             <div class="product-card_image">
               <img
                 class="image-default"
-                src="image/images/brillorfel.png"
+                src="image/images/skor04.png"
                 alt="Produkt framifrån"
               />
               <img
                 class="image-hover"
-                src="image/images/brillorfel2.png"
-                alt="Produkt från sidan"
-              />
-              <button
-                class="product-card_heart"
-                type="button"
-                aria-label="Lägg till i favoriter"
-                aria-pressed="false"
-              >
-                <img src="image/Ikon/Heart.svg" alt="" />
-              </button>
-            </div>
-            <div class="product-card_name">namn</div>
-            <div class="product-card_pris">pris</div>
-            <div class="choose-color">
-              <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
-              <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-card_image">
-              <img
-                class="image-default"
-                src="image/images/brillorfel.png"
-                alt="Produkt framifrån"
-              />
-              <img
-                class="image-hover"
-                src="image/images/brillorfel2.png"
+                src="image/images/skortje04.png"
                 alt="Produkt från sidan"
               />
               <button
@@ -247,7 +274,8 @@
       </section>
 
       <section class="innovation">
-        <img src="image/images/innovation.png" />
+        <img class="innovation-mobile" src="image/images/innovation_mobile.png">
+        <img class="innovation-desktop" src="image/images/Slide 1.png" />
         <div class="innovation-content">
           <div>Design</div>
         </div>
