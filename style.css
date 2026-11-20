@@ -90,8 +90,8 @@
 
 .nav-right_icons img {
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 16px;
+  height: 14px;
 }
 
 .hamburgermenu {
@@ -101,8 +101,12 @@
 
 .hamburgermenu img {
   display: block;
-  width: 19px;
-  height: 19px;
+  width: 13px;
+  height: 10px;
+}
+
+.nav-right_icons .nav-right_icons_user {
+  display: none;
 }
 
 .nav-left_category {
@@ -567,6 +571,10 @@
 
   .hamburgermenu {
     display: none;
+  }
+
+  .nav-right_icons .nav-right_icons_user {
+  display: block;
   }
 
   .logo {
