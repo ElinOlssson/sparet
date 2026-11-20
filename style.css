@@ -116,10 +116,14 @@
   overflow: hidden;
 }
 
-.hero > img {
+.hero_mobile {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.hero_desktop {
+  display: none;
 }
 
 .hero-content {
@@ -199,7 +203,7 @@
 
 .product-grid {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   overflow-x: auto;
   overflow-y: hidden;
 }
@@ -615,6 +619,15 @@
     padding-bottom: 8px;
   }
 
+  .hero_mobile {
+    display: none;
+  }
+  .hero_desktop {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .hero-text {
     gap: 37px;
   }
@@ -689,7 +702,6 @@
   .product-card_image:hover .image-hover {
     opacity: 1;
   }
-
 
   /* BANNER */
   .banner {
