@@ -243,8 +243,7 @@
   height: 20px;
 }
 
-.product-card_name,
-.product-card_pris {
+.product-card_name {
   color: var(--Base-colors-black, #252525);
   font-family: var(--font-primary);
   font-size: var(--font-size-16);
@@ -254,9 +253,24 @@
   letter-spacing: 0;
 }
 
+.product-card_pris {
+color: var(--Base-colors-black, #252525);
+font-family: var(--Font-Family-DM-Sans, "DM Sans");
+font-size: var(--Font-Size-14, 14px);
+font-style: normal;
+font-weight: var(--Font-Weight-regular, 400);
+line-height: var(--Line-Height-20, 20px);
+letter-spacing: 0;
+}
+
+.product-card_pris, .product-card_name {
+  gap: 4px;
+}
+
+
 .choose-color {
   display: flex;
-  gap: 5px;
+  gap: 4px;
 }
 
 /* BANNER */
