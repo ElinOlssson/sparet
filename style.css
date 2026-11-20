@@ -201,12 +201,13 @@
   display: flex;
   gap: 16px;
   overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .product-card {
   flex-shrink: 0;
   width: 330px;
-  height: 488px;
+  height: auto;
 }
 
 .product-card_image {
@@ -277,8 +278,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   padding: 0;
   border: none;
   border-radius: 50%;
