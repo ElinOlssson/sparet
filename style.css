@@ -275,10 +275,14 @@
 
 .innovation {
   width: 100%;
+  padding-left: 47px;
+  padding-right: 55px;
 }
 
 .innovation img {
+  display: block;
   width: 100%;
+  height: auto;
 }
 
 /* BANNER */
@@ -652,6 +656,7 @@
   .product-card {
     width: 100%;
     min-width: 0;
+    height: auto;
   }
 
   .product-card_image {
