@@ -126,11 +126,27 @@
             </div>
             <div class="product-card_name">namn</div>
             <div class="product-card_pris">pris</div>
-            <div class="choose-color">
-              <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
-              <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
+            <div class="choose-color" id="active-color-picker">
+              <button
+                type="button"
+                class="color-option selected"
+                data-image="image/product-black.png"
+                style="--swatch-color: #0c4651"
+                aria-label="Blå"
+                aria-pressed="true"
+              ></button>
+
+              <button
+                type="button"
+                class="color-option"
+                data-image="image/product-green.png"
+                style="--swatch-color: #c0e703"
+                aria-label="Grön"
+                aria-pressed="false"
+              ></button>
             </div>
           </div>
+
           <div class="product-card">
             <div class="product-card_image">
               <img

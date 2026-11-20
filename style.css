@@ -273,6 +273,19 @@
   gap: 4px;
 }
 
+.color-option {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--swatch-color);
+  cursor: pointer;
+}
+
 .innovation {
   width: 100%;
   padding-left: 47px;
@@ -675,6 +688,7 @@
   .product-card_image:hover .image-hover {
     opacity: 1;
   }
+
 
   /* BANNER */
   .banner {
