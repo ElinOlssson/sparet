@@ -561,6 +561,53 @@
   cursor: pointer;
 }
 
+/* FOOTER*/
+
+footer {
+  background-color: var(--color-primary);
+}
+
+.footer-one {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 128px;
+}
+
+.footer-one h5 {
+  color: var(--color-accent);
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-26);
+  padding: 20px 50px 16px 50px;
+}
+
+.footer-one-article_desktop {
+  display: none;
+}
+
+.footer-one-article_mobile {
+  display: block;
+  color: var(--color-accent);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-18);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 28px;
+  letter-spacing: 0;
+  padding: 0px 40px 0px 40px;
+}
+.footer-one a {
+  display: block;
+  color: var(--color-bg-secondary);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-16);
+  font-style: normal;
+  font-weight: var(--font-weight-medium);
+  line-height: 28px;
+  letter-spacing: 0;
+  padding: 28px 20px 0px 20px;
+}
+
 /* DESKTOP - ALL SECTIONS */
 
 @media (min-width: 1024px) {
@@ -576,7 +623,7 @@
   }
 
   .nav-right_icons .nav-right_icons_user {
-  display: block;
+    display: block;
   }
 
   .logo {
@@ -716,19 +763,19 @@
   /* Innovation section*/
 
   .innovation {
-  padding-left: 47px;
-  padding-right: 55px;
-}
+    padding-left: 47px;
+    padding-right: 55px;
+  }
 
   .innovation-desktop {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-.innovation-mobile {
-  display: none;
-}
+  .innovation-mobile {
+    display: none;
+  }
 
   /* BANNER */
   .banner {
@@ -895,5 +942,47 @@
     padding: 32px 0;
     display: flex;
     justify-content: flex-start;
+  }
+
+  .footer-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 53px 20px 59px;
+    border-bottom: 1px solid var(--color-secondary);
+  }
+
+  .footer-one h5 {
+    font-family: var(--Font-Family-Chakra-Petch, "Chakra Petch");
+    font-size: var(--Font-Size-36, 36px);
+    font-style: normal;
+    font-weight: var(--Font-Weight-medium, 500);
+    line-height: var(--Line-Height-44, 44px); /* 122.222% */
+    letter-spacing: var(--Letter-Spacing-0, 0);
+    padding: 10px 50px 10px 50px;
+  }
+
+  .footer-one-article_desktop {
+    display: block;
+    color: var(--color-accent);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-24);
+    max-width: 940px;
+    width: 100%;
+    padding-top: 10px;
+    margin-top: 12px;
+    padding-bottom: 10px;
+  }
+
+  .footer-one a {
+    padding-top: 15px;
+  }
+
+  .footer-one-article_mobile {
+    display: none;
   }
 }
