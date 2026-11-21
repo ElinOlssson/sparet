@@ -575,10 +575,15 @@ footer {
 }
 
 .footer-one h5 {
-  color: var(--color-accent);
-  font-family: var(--font-secondary);
-  font-size: var(--font-size-26);
-  padding: 20px 50px 16px 50px;
+  color: var(--Accent-Neon, #c0e703);
+  text-align: center;
+  font-family: var(--Font-Family-Chakra-Petch, "Chakra Petch");
+  font-size: var(--Font-Size-26, 26px);
+  font-style: normal;
+  font-weight: var(--Font-Weight-medium, 500);
+  line-height: var(--Line-Height-32, 32px); /* 123.077% */
+  letter-spacing: var(--Letter-Spacing-0, 0);
+  padding: 20px 60px 16px 60px;
 }
 
 .footer-one-article_desktop {
@@ -587,15 +592,17 @@ footer {
 
 .footer-one-article_mobile {
   display: block;
-  color: var(--color-accent);
-  font-family: var(--font-primary);
+  color: var(--Accent-Neon, #c0e703);
+  text-align: center;
+  font-family: var(--Font-Family-DM-Sans, "DM Sans");
   font-size: var(--font-size-18);
   font-style: normal;
-  font-weight: var(--font-weight-medium);
-  line-height: 28px;
-  letter-spacing: 0;
-  padding: 0px 40px 0px 40px;
+  font-weight: 500;
+  line-height: var(--Line-Height-28, 28px);
+  letter-spacing: var(--Letter-Spacing-0, 0);
+  padding: 0px 32px 0px 32px;
 }
+
 .footer-one a {
   display: block;
   color: var(--color-bg-secondary);
