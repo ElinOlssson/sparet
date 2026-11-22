@@ -67,8 +67,11 @@
             <div class="hero-text_text">Hållbarhet</div>
           </div>
 
-          <h1>Ett nytt spår tar form</h1>
-          <button class="hero-button">CTA</button>
+          <h1>
+            Ett nytt spår<br class="mobile-break" />
+            tar form
+          </h1>
+          <button class="hero-button">Upptäck vår limiterade kollektion</button>
         </div>
       </section>
 
@@ -102,8 +105,8 @@
                 <img src="image/Ikon/Heart.svg" alt="" />
               </button>
             </div>
-            <div class="product-card_name">namn</div>
-            <div class="product-card_pris">pris</div>
+            <div class="product-card_name">Solglasögon med kamera</div>
+            <div class="product-card_pris">1899 kr</div>
             <div class="choose-color">
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
@@ -130,8 +133,8 @@
                 <img src="image/Ikon/Heart.svg" alt="" />
               </button>
             </div>
-            <div class="product-card_name">namn</div>
-            <div class="product-card_pris">pris</div>
+            <div class="product-card_name">Padelrack med bollpaket</div>
+            <div class="product-card_pris">899 kr</div>
             <div class="choose-color" id="active-color-picker">
               <button
                 type="button"
@@ -182,8 +185,8 @@
                 <img src="image/Ikon/Heart.svg" alt="" />
               </button>
             </div>
-            <div class="product-card_name">namn</div>
-            <div class="product-card_pris">pris</div>
+            <div class="product-card_name">Solkräm SPF 50+</div>
+            <div class="product-card_pris">259 kr</div>
             <div class="choose-color">
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
@@ -210,8 +213,8 @@
                 <img src="image/Ikon/Heart.svg" alt="" />
               </button>
             </div>
-            <div class="product-card_name">namn</div>
-            <div class="product-card_pris">pris</div>
+            <div class="product-card_name">Padelskor</div>
+            <div class="product-card_pris">1299 kr</div>
             <div class="choose-color">
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
               <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
@@ -274,16 +277,118 @@
             </div>
           </div>
         </div>
+        <div class="products-next-page">
+          <a>Visa fler produkter</a>
+          <img src="image/Ikon/Arrow_next_page.svg" alt="arrow" />
+        </div>
       </section>
 
       <section class="innovation">
-        <img
-          class="innovation-mobile"
-          src="image/images/innovation_mobile.png"
-        />
-        <img class="innovation-desktop" src="image/images/Slide 1.png" />
-        <div class="innovation-content">
-          <div>Design</div>
+        <div class="innovation-carousel">
+          <!-- SLIDE 1 -->
+          <div class="innovation-slide innovation-slide-one active">
+            <picture class="innovation-image">
+              <source
+                media="(min-width: 1024px)"
+                srcset="image/images/inovation_desk.png"
+              />
+              <img src="image/images/innovation_mobile.png" alt="" />
+            </picture>
+
+            <div class="innovation-text">
+              <h2>Designade för rörelse</h2>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="innovation-slide innovation-slide-two">
+            <picture class="innovation-image">
+              <source
+                media="(min-width: 1024px)"
+                srcset="image/images/innovation_brillor.png"
+              />
+              <img
+                src="image/images/innovation_mobile_glasögon.png"
+                alt="Sportglasögon"
+              />
+            </picture>
+
+            <div class="innovation-text">
+              <h2>Se spelet från ett nytt perspektiv.</h2>
+              <article>
+                <p>
+                  Med en integrerad kamera fångar SPÅR varje ögonblick ur ditt
+                  perspektiv.
+                </p>
+                <p>
+                  Spela in din träning, återupplev dina matcher och se
+                  detaljerna du missade mitt i spelet.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="innovation-slide innovation-camera">
+            <video class="camera-video" autoplay muted loop playsinline>
+              <source src="video/camera.webm" type="video/webm" />
+            </video>
+
+            <div class="camera-text">
+              <h2>Avancerad teknik. Sömlöst integrerad.</h2>
+
+              <article class="camera-text-description">
+                <p>
+                  Bakom designen arbetar en 4K-kamera med elektronisk
+                  bildstabilisering och vidvinkeloptik.
+                </p>
+                <p>
+                  Utvecklad för att fånga varje rörelse med hög detaljrikedom,
+                  även när tempot ökar.
+                </p>
+                <p>4K UHD · 60 FPS · 120° vidvinkel</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- NAVIGERING -->
+          <div class="innovation-controls">
+            <button
+              class="innovation-prev"
+              type="button"
+              aria-label="Föregående slide"
+            >
+              &#10094;
+            </button>
+
+            <button
+              class="innovation-next"
+              type="button"
+              aria-label="Nästa slide"
+            >
+              &#10095;
+            </button>
+
+            <div class="innovation-dots">
+              <button
+                class="innovation-dot active"
+                type="button"
+                aria-label="Visa slide 1"
+              ></button>
+
+              <button
+                class="innovation-dot"
+                type="button"
+                aria-label="Visa slide 2"
+              ></button>
+
+              <button
+                class="innovation-dot"
+                type="button"
+                aria-label="Visa slide 3"
+              ></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -450,31 +555,35 @@
       <div class="footer-two-grid">
         <div class="footer-two-card">
           <h6>Kundservice</h6>
-          <p>Kontakta oss</p>
-          <p>Frågor och svar</p>
-          <p>Frakt och leverans</p>
-          <p>Byten och returer</p>
-          <p>Sök</p>
+          <a>Kontakta oss</a>
+          <a>Frågor och svar</a>
+          <a>Frakt och leverans</a>
+          <a>Byten och returer</a>
+          <a>Sök</a>
         </div>
         <div class="footer-two-card">
           <h6>Om oss</h6>
-          <p>Vad är SPÅR?</p>
-          <p>Hållbarhet</p>
-          <p>Vår inspiration</p>
-          <p>Community</p>
-          <p>Press</p>
+          <a>Vad är SaÅR?</a>
+          <a>Hållbarhet</a>
+          <a>Vår insairation</a>
+          <a>Community</a>
+          <a>Press</a>
         </div>
         <div class="footer-two-card">
           <h6>Följ oss</h6>
-          <p>Instagram</p>
-          <p>Facebook</p>
-          <p>Youtube</p>
+          <a>Instagram</a>
+          <a>Facebook</a>
+          <a>Youtube</a>
         </div>
       </div>
       <div class="footer-three">
         <div class="footer-three_left">
-          <img class="footer-three_globe" src="image/Ikon/Språk och land.svg" alt="globe" />
-          <div class="footer-three_language">ENG / SV</div>
+          <img
+            class="footer-three_globe"
+            src="image/Ikon/Språk och land.svg"
+            alt="globe"
+          />
+          <div class="footer-three_language">SV / SE</div>
         </div>
         <img class="footer-three_logo" src="image/images/logo.png" alt="logo" />
       </div>
