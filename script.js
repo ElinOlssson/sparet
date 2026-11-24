@@ -41,7 +41,6 @@ colorButtons.forEach((button) => {
   });
 });
 
-
 /* INNOVATION CAROUSEL */
 
 const innovationCarousel = document.querySelector(".innovation-carousel");
@@ -102,48 +101,81 @@ if (innovationCarousel) {
     });
   });
 
-/* SVEPA PÅ MOBIL OCH DRA MED MUS */
+  /* SVEPA PÅ MOBIL OCH DRA MED MUS */
 
-let startX = 0;
-let startY = 0;
-let isDragging = false;
+  let startX = 0;
+  let startY = 0;
+  let isDragging = false;
 
-slides.forEach((slide) => {
-  slide.addEventListener("pointerdown", (event) => {
-    if (event.pointerType === "mouse" && event.button !== 0) {
-      return;
-    }
+  slides.forEach((slide) => {
+    slide.addEventListener("pointerdown", (event) => {
+      if (event.pointerType === "mouse" && event.button !== 0) {
+        return;
+      }
 
-    startX = event.clientX;
-    startY = event.clientY;
-    isDragging = true;
+      startX = event.clientX;
+      startY = event.clientY;
+      isDragging = true;
+    });
+
+    slide.addEventListener("pointerup", (event) => {
+      console.log("Pointerup registrerad:", event.clientX);
+      if (!isDragging) return;
+
+      const differenceX = startX - event.clientX;
+      const differenceY = startY - event.clientY;
+
+      isDragging = false;
+
+      if (
+        Math.abs(differenceX) > 50 &&
+        Math.abs(differenceX) > Math.abs(differenceY)
+      ) {
+        showSlide(currentSlide + (differenceX > 0 ? 1 : -1));
+      }
+    });
+
+    slide.addEventListener("pointercancel", () => {
+      isDragging = false;
+    });
+
+    slide.addEventListener("dragstart", (event) => {
+      event.preventDefault();
+    });
   });
-
-  slide.addEventListener("pointerup", (event) => {
-    console.log("Pointerup registrerad:", event.clientX);
-    if (!isDragging) return;
-
-    const differenceX = startX - event.clientX;
-    const differenceY = startY - event.clientY;
-
-    isDragging = false;
-
-    if (
-      Math.abs(differenceX) > 50 &&
-      Math.abs(differenceX) > Math.abs(differenceY)
-    ) {
-      showSlide(currentSlide + (differenceX > 0 ? 1 : -1));
-    }
-  });
-
-  slide.addEventListener("pointercancel", () => {
-    isDragging = false;
-  });
-
-  slide.addEventListener("dragstart", (event) => {
-    event.preventDefault();
-  });
-});
 
   showSlide(0);
+}
+
+/* REVIEW CAROUSEL */
+
+const reviewGrid = document.querySelector("#review-grid");
+
+if (reviewGrid) {
+  const leftArrow = document.querySelector(".review-arrow-left");
+  const rightArrow = document.querySelector(".review-arrow-right");
+  const reviewCards = reviewGrid.querySelectorAll(".review-card");
+
+  function scrollReviews(direction) {
+    const firstCard = reviewCards[0];
+
+    if (!firstCard) return;
+
+    const cardWidth = firstCard.getBoundingClientRect().width;
+    const gridStyles = window.getComputedStyle(reviewGrid);
+    const gap = parseFloat(gridStyles.columnGap) || 0;
+
+    reviewGrid.scrollBy({
+      left: direction * (cardWidth + gap),
+      behavior: "smooth",
+    });
+  }
+
+  leftArrow?.addEventListener("click", () => {
+    scrollReviews(-1);
+  });
+
+  rightArrow?.addEventListener("click", () => {
+    scrollReviews(1);
+  });
 }
