@@ -1532,25 +1532,22 @@ html {
 
   .banner-form {
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: 24px 10px 9px;
-    justify-content: center;
-    align-items: stretch;
-    gap: 10px;
+    width: 480px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
   }
 
   .submit {
     display: flex;
-    width: 100%;
-    max-width: 1240px;
-    height: 48px;
+    width: 480px;
+    height: 38px;
     padding: 18px;
-    margin: 0 auto;
+    margin: 0;
     justify-content: center;
     align-items: center;
+    gap: 10px;
     box-sizing: border-box;
 
     border: none;
