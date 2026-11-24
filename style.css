@@ -144,7 +144,7 @@
 
 .hero-content {
   position: absolute;
-  top: 115px;
+  top: 140px;
   left: 0;
   width: 100%;
   display: block;
@@ -156,9 +156,9 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 24px;
   width: 100%;
-  padding-bottom: 29px;
+  padding-bottom: 21px;
 }
 
 .mobile-break {
@@ -180,7 +180,7 @@
   color: var(--color-bg-complement);
   text-align: center;
   font-family: var(--Font-Family-DM-Sans, "DM Sans");
-  font-size: var(--Font-Size-20, 20px);
+  font-size: var(--Font-Size-18, 18px);
   font-style: normal;
   font-weight: var(--font-weight-medium);
   line-height: var(--line-height-32);
@@ -196,7 +196,7 @@
   color: var(--Base-colors-black, #252525);
   text-align: center;
   font-family: var(--Font-Family-DM-Sans, "DM Sans");
-  font-size: var(--Font-Size-16, 16px);
+  font-size: var(--Font-Size-14, 14px);
   font-style: normal;
   font-weight: var(--Font-Weight-medium, 500);
   line-height: var(--Line-Height-16, 16px); /* 100% */
@@ -1279,7 +1279,7 @@ html {
   .products-next-page {
     display: flex;
     gap: 8px;
-    margin-top: 150px;
+    margin-top: 100px;
     align-items: center;
     justify-content: flex-end;
   }
