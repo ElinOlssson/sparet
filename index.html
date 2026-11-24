@@ -401,32 +401,49 @@
       </section>
 
       <section class="banner">
+        <img class="banner-image" src="image/images/banner.png" alt="" />
         <div class="banner-content">
-          <h2 class="banner-title">SPÅR X Marta Ortega Gallego</h2>
-          <p class="banner-intro">En kväll. Ett försprång.</p>
-          <p class="banner-description">
-            Vi bjuder in till en exklusiv förhandsvisning av vår limiterade
-            kollektion framtagen i ett samarbete med Marta Ortega Gallego.
-          </p>
-          <p class="banner-text">
-            Bli först med att upptäcka resultatet. Begränsat antal platser.
-          </p>
-          <p class="banner-text">
-            Registrera dig, så skickar vi tid och plats till din mejl.
-          </p>
+          <div class="banner-text-content">
+            <h2 class="banner-title">
+              SPÅR
+              <span class="banner-x">x</span>
+              <span class="banner-title-name">Marta Ortega Gallego</span>
+            </h2>
+
+            <div class="banner-copy">
+              <p class="banner-intro">En kväll. Ett försprång.</p>
+
+              <p class="banner-description">
+                Vi bjuder in till en exklusiv förhandsvisning av vår limiterade
+                kollektion framtagen i ett samarbete med Marta Ortega Gallego.
+              </p>
+
+              <p class="banner-text">
+                Bli först med att upptäcka resultatet. Begränsat antal platser.
+              </p>
+
+              <p class="banner-text">
+                Registrera dig, så skickar vi tid och plats till din mejl.
+              </p>
+            </div>
+          </div>
+
           <form id="banner-email-form" class="banner-form">
+            <label for="campaign-email" class="campaign-email-label">
+              E-postadress
+            </label>
+
             <input
+              id="campaign-email"
               class="campaign-email"
               type="email"
               name="email"
-              placeholder="Din e-postaddress"
-              aria-label="Email address"
+              placeholder="Din e-postadress"
               required
             />
+
+            <button type="submit" class="submit">Säkra din plats</button>
           </form>
-          <button type="submit" class="submit" form="banner-email-form">
-            Säkra din plats
-          </button>
         </div>
       </section>
 
