@@ -571,7 +571,7 @@
   width: 100%;
   min-height: 665px;
   overflow: hidden;
-  background-color: #252525;
+  background-color: var(--color-bg-primary);
 }
 
 .banner-image {
@@ -755,7 +755,7 @@
 
 .review {
   width: 100%;
-  background-color: #d9d9d9;
+  background-color: var(--color-bg-primary)
   padding: 40px 16px;
 }
 
@@ -1479,6 +1479,7 @@ html {
     height: 624px;
     flex-shrink: 0;
     overflow: hidden;
+    background-color: var(--color-bg-primary);
   }
 
   .banner-image {
@@ -1606,7 +1607,7 @@ html {
     min-height: 448px;
     padding: 70px 0;
     box-sizing: border-box;
-    background-color: #d9d9d9;
+    background-color: var(--color-bg-primary);
   }
 
   .review-title {
@@ -1640,6 +1641,7 @@ html {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    background-color: var(--color-bg-primary);
   }
 
   .review-grid::-webkit-scrollbar {
@@ -1663,6 +1665,7 @@ html {
 
     box-sizing: border-box;
     scroll-snap-align: start;
+    box-shadow: none;
   }
 
   .review-card_text {
@@ -1722,16 +1725,13 @@ html {
   }
 
   .category-title {
-    display: block;
-    width: 1152px;
-    margin: 0 auto 16px;
-    font-family: var(--font-secondary);
-    font-size: var(--font-size-36);
-    font-weight: var(--font-weight-medium);
-    line-height: var(--line-height-44);
+    color: #252525;
+    font-family: "DM Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
     letter-spacing: 0;
-    color: var(--color-text-primary);
-    text-align: left;
   }
 
   .category-grid {
