@@ -351,6 +351,7 @@ body {
 
 .innovation-carousel > .innovation-slide.active {
   display: block;
+  animation: innovationFade 0.7s ease-in-out;
 }
 
 .innovation-carousel > .innovation-camera.active {
@@ -532,11 +533,6 @@ body {
   background-color: var(--color-bg-secondary);
 }
 
-/* Mjuk fade för alla tre slides */
-
-.innovation-carousel > .innovation-slide.active {
-  animation: innovationFade 0.7s ease-in-out;
-}
 
 @keyframes innovationFade {
   from {
@@ -580,20 +576,6 @@ body {
   inset: 0;
   background: rgba(37, 37, 37, 0.6);
   z-index: 1;
-}
-
-.banner-content {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  width: 100%;
-  min-height: 665px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  gap: 24px;
-  padding: 30px 12px;
-  box-sizing: border-box;
 }
 
 .banner-content {
@@ -963,9 +945,6 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
-}
-
-.category-card button {
   cursor: pointer;
   transition:
     background-color 0.3s ease,
@@ -1384,17 +1363,6 @@ html {
     width: 100%;
   }
 
-  .innovation-image {
-    display: block;
-    width: 100%;
-  }
-
-  .innovation-image img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   /* Gemensam text */
 
   .innovation-text_slideone_h2 {
@@ -1495,10 +1463,6 @@ html {
     object-fit: cover;
   }
 
-  .innovation-camera {
-    height: auto;
-  }
-
   /* SLIDE 3 - DESKTOP */
 
   .innovation-camera {
@@ -1506,6 +1470,7 @@ html {
     align-items: center;
     aspect-ratio: 1338 / 491;
     min-height: 0;
+    height: auto;
   }
 
   .camera-video {
@@ -1564,6 +1529,7 @@ html {
     margin: 0 auto;
     padding: 60px 20px 75px;
     box-sizing: border-box;
+    padding-left: 144px;
   }
   .banner-text-content {
     display: flex;
@@ -1639,15 +1605,17 @@ html {
     box-sizing: border-box;
 
     border: none;
-    border-radius: 20px;
     background: #c0e703;
 
-    color: #252525;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
     cursor: pointer;
+    border-radius: 4px;
+    color: #252525;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
   }
 
   /* DESKTOP REVIEWS */
@@ -1711,7 +1679,6 @@ html {
 
     background: #f6f2e8;
     border-radius: 8px;
-    box-shadow: 0 4px 4px 0 #252525;
 
     box-sizing: border-box;
     scroll-snap-align: start;
@@ -1736,6 +1703,8 @@ html {
   .review-card_link {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
+    text-decoration: none;
+    transition: text-decoration 0.2s ease;
   }
 
   .review-arrow {
@@ -1756,10 +1725,6 @@ html {
   }
 
   /* PRODUCT LINK HOVER */
-  .review-card_link {
-    text-decoration: none;
-    transition: text-decoration 0.2s ease;
-  }
 
   .review-card_link:hover {
     text-decoration: underline;
@@ -1769,7 +1734,6 @@ html {
   .category-section {
     display: flex;
     flex-direction: column;
-    width: 100%;
     width: min(100%, 1152px);
     margin: 0 auto;
   }
@@ -1860,9 +1824,6 @@ html {
   }
 
   /* Campaign-email Desktop */
-  .banner-content {
-    padding-left: 144px;
-  }
 
   .campaign-email {
     display: flex;
@@ -1890,17 +1851,6 @@ html {
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     font-weight: 500;
-  }
-
-  .submit {
-    border-radius: 4px;
-    color: #252525;
-    font-family: var(--font-primary);
-    font-size: 16px;
-    font-style: normal;
-    line-height: 16px;
-    font-weight: 500;
-    letter-spacing: 0;
   }
 
   .body-text {
