@@ -315,31 +315,7 @@
 }
 
 .choose-color {
-  display: flex;
-  gap: 4px;
-  margin-top: 4px;
-}
-
-.choose-color_p {
-  color: #252525;
-  font-family: var(--font-primary);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 17px; /* 141.667% */
-}
-
-.color-option {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  border: none;
-  border-radius: 50%;
-  background-color: var(--swatch-color);
-  cursor: pointer;
+  display: none;
 }
 
 .products-next-page {
@@ -1334,6 +1310,39 @@ html {
 
   .products-next-page a:hover {
     cursor: pointer;
+    text-decoration: underline;
+  }
+
+  .color-option:first-child {
+    border: 1.3px solid #252525;
+  }
+
+  .choose-color {
+    display: flex;
+    gap: 4px;
+    margin-top: 4px;
+  }
+
+  .choose-color_p {
+    color: #252525;
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 141.667% */
+  }
+
+  .color-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--swatch-color);
+    cursor: pointer;
   }
 
   /* INNOVATION - DESKTOP */
@@ -1893,6 +1902,7 @@ html {
 
   .footer-one a:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
 
   .footer-one-article_mobile {
@@ -1935,6 +1945,7 @@ html {
 
   .footer-two-card a:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
 
   .footer-three {
