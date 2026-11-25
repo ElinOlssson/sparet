@@ -24,12 +24,14 @@ const colorPicker = document.querySelector("#active-color-picker");
 const productCard = colorPicker.closest(".product-card");
 
 const productImage = productCard.querySelector(".image-default");
+const productHoverImage = productCard.querySelector(".image-hover");
 
 const colorButtons = colorPicker.querySelectorAll(".color-option");
 
 colorButtons.forEach((button) => {
   button.addEventListener("click", () => {
     productImage.src = button.dataset.image;
+    productHoverImage.src = button.dataset.hoverImage;
 
     colorButtons.forEach((colorButton) => {
       colorButton.classList.remove("selected");
@@ -82,6 +84,8 @@ if (innovationCarousel) {
       dot.classList.toggle("active", isActive);
       dot.setAttribute("aria-current", String(isActive));
     });
+    prevButton.disabled = currentSlide === 0;
+    nextButton.disabled = currentSlide === slides.length - 1;
   }
 
   // Nästa slide med pil
