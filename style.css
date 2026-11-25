@@ -965,7 +965,7 @@ body {
 /* FOOTER*/
 
 footer {
-  margin-top: 128px;
+  margin-top: 64px;
   background-color: var(--color-primary);
 }
 
@@ -973,7 +973,7 @@ footer {
   display: block;
   text-align: center;
   width: 100%;
-  margin-top: 128px;
+  margin-top: 0px;
 }
 
 .footer-one h5 {
@@ -1863,7 +1863,7 @@ html {
   }
 
   footer {
-    margin-top: 224px;
+    margin-top: 120px;
   }
 
   .footer-one {
