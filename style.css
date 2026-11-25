@@ -440,7 +440,7 @@
 
 /* Gemensam text */
 
-.innovation h2 {
+.innovation-text_slidetwo_h2 {
   color: var(--color-accent);
   font-family: var(--font-secondary);
   font-size: 40px;
@@ -755,7 +755,7 @@
 
 .review {
   width: 100%;
-  background-color: var(--color-bg-primary)
+  background-color: var(--color-bg-primary);
   padding: 40px 16px;
 }
 
@@ -1362,22 +1362,24 @@ html {
 
   /* Gemensam text */
 
-  .innovation h2 {
-    color: var(--color-accent);
-    font-family: var(--font-primary);
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 36px;
-  }
-
-  .innovation-text h2 {
+  .innovation-text_slideone_h2 {
     color: var(--Accent-neon, #c0e703);
-    font-family: var(--Font-Family-Chakra-Petch, "Chakra Petch");
-    font-size: var(--Font-Size-36, 36px);
+    font-family: var(--font-secondary);
+    font-size: 64px;
     font-style: normal;
     font-weight: var(--Font-Weight-medium, 500);
-    line-height: var(--Line-Height-44, 44px); /* 122.222% */
+    line-height: 72px; /* 112.5% */
     letter-spacing: var(--Letter-Spacing-0, 0);
+  }
+
+  .innovation-text_slidetwo_h2 {
+    color: var(--Accent-neon, #c0e703);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-28);
+    font-style: normal;
+    font-weight: var(--font-weight-regular);
+    line-height: 36px;
+    letter-spacing: 0;
   }
 
   .innovation article {
