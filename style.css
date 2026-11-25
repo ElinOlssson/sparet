@@ -403,7 +403,20 @@
 /* SLIDE 1 */
 
 .innovation-slide-one .innovation-text {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+
+.innovation-text_slideone_h2 {
+  color: var(--Accent-neon, #c0e703);
+  font-family: var(--Font-Family-Chakra-Petch, "Chakra Petch");
+  font-size: var(--Font-Size-40, 40px);
+  font-style: normal;
+  font-weight: var(--Font-Weight-medium, 500);
+  line-height: var(--Line-Height-44, 44px); /* 110% */
+  letter-spacing: var(--Letter-Spacing-0, 0);
 }
 
 /* SLIDE 2 */
