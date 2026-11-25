@@ -5,7 +5,7 @@
 
 :root {
   /* Base colors */
-  --color-bg-primary: #ffffff;
+  --color-bg-primary: #d9d9d9;
   --color-bg-secondary: #c8c4b7;
   --color-bg-complement: #f6f2e8;
 
@@ -56,8 +56,8 @@
 }
 
 /* HEADER AND NAVIGATION */
-.body {
-  background-color: #d9d9d9;
+body {
+  background-color: var(--color-bg-primary);
 }
 
 .site-header {
@@ -860,6 +860,17 @@
 
 /* Mobile category grid */
 
+.category-title {
+  color: #000;
+  font-family: var(--font-secondary);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 22px;
+  margin-left: 20px;
+}
+
 .category-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -1644,7 +1655,7 @@ html {
   .review {
     width: 100%;
     min-height: 448px;
-    padding: 70px 0;
+    padding: 172px 0 116px 0;
     box-sizing: border-box;
     background-color: var(--color-bg-primary);
   }
@@ -1771,6 +1782,7 @@ html {
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0;
+    margin-bottom: 20px;
   }
 
   .category-grid {
@@ -1848,6 +1860,9 @@ html {
   }
 
   /* Campaign-email Desktop */
+  .banner-content {
+    padding-left: 144px;
+  }
 
   .campaign-email {
     display: flex;
@@ -1877,11 +1892,22 @@ html {
     font-weight: 500;
   }
 
+  .submit {
+    border-radius: 4px;
+    color: #252525;
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
   .body-text {
     width: 100%;
     max-width: 1100px;
-    margin: 0 auto;
-    padding: 32px 0;
+    margin-left: 128px;
+    padding: 70px 0 120px 0;
     display: flex;
     justify-content: flex-start;
   }
