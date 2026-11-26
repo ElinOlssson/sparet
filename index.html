@@ -5,229 +5,709 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spåret</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="image" href="image/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <div class="nav-left">
-        <img src="image/Startsida/Ikon/Meny.svg" alt="Menymobil" />
-        <nav class="nav-left_category">
-          <a href="#">Herr</a>
-          <a href="#">Dam</a>
-          <a href="#">Kängor</a>
-          <a href="#">Ryggsäckar</a>
-          <a href="#">Inspiration</a>
-          <a href="#">Kundtjänst</a>
+      <div class="header-top">
+        <img class="logo" src="image/images/logo.png" />
+        <nav class="nav-right">
+          <div class="nav-right_icons">
+            <img src="image/Ikon/Sök.svg" alt="Sök" />
+            <img src="image/Ikon/heartgreen.svg" alt="Favoriter" />
+            <img src="image/Ikon/Varukorg.svg" alt="Varukorg" />
+            <img
+              class="nav-right_icons_user"
+              src="image/Ikon/Vector.svg"
+              alt="användare"
+            />
+          </div>
+
+          <div class="hamburgermenu">
+            <img src="image/Ikon/menyicon.svg" alt="Meny" />
+          </div>
         </nav>
       </div>
-      <div class="logo">LOGO</div>
-      <nav class="nav-right">
-        <div class="nav-right_contact">
-          <a href="#">Outlet</a>
-          <a href="#">Contact</a>
-          <a href="#">Log in</a>
-          <a href="#">SV/SE</a>
-        </div>
-        <div class="nav-right_icons">
-          <img src="image/Sök.svg" alt="search_icon" />
-          <img src="image/Varukorg.svg" alt="varukorg_icon" />
-          <img src="image/Startsida/Ikon/Favorit-1.svg" alt="heart_icon" />
-        </div>
+
+      <nav class="nav-left_category">
+        <a href="#">Nyheter</a>
+        <a href="#">Skor</a>
+        <a href="#">Kläder</a>
+        <a href="#">Utrustning</a>
+        <a href="#">Kollektioner</a>
+        <a href="#">Innovation</a>
+        <a href="#">Hållbarhet</a>
+        <a href="#">Om oss</a>
+        <a href="#">SV/SE</a>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div class="hero-text">
-          <div></div>
-          <div></div>
-          <div></div>
+        <img class="hero_mobile" src="image/images/hero-bild-mobile.png" />
+        <img
+          class="hero_desktop"
+          src="image/images/Dynamisk padelrörelse med gröna sneakers 1.png"
+        />
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-text_text">Design</div>
+            <div class="hero-text_text">Funktion</div>
+            <div class="hero-text_text">Hållbarhet</div>
+          </div>
+
+          <h1>
+            Ett nytt spår<br class="mobile-break" />
+            tar form
+          </h1>
+          <button class="hero-button">Upptäck vår limiterade kollektion</button>
         </div>
-        <h1>Headline</h1>
-        <button class="hero-button">CTA</button>
       </section>
 
       <section class="introduction">
-        <h3>hehehheheheh</h3>
+        <p class="introduction-text">
+          Vi tror att bra design ska kännas lika bra som den ser ut.
+          <br class="desktop-break" />
+          Därför finns det en tanke bakom varje detalj.
+        </p>
+      </section>
+      <section class="products">
+        <h5 class="products-title">Limiterad kollektion</h5>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/solbrillor04.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/tjejbrillor0404.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Solglasögon med kamera</div>
+            <div class="product-card_pris">1899 kr</div>
+            <div class="choose-color">
+              <img src="image/Ikon/Färgprov 4.svg" alt="colorwhite" />
+              <img src="image/Ikon/Färgprov 1.svg" alt="colordarkblue" />
+              <img src="image/Ikon/Färgprov 2-1.svg" alt="colorlightblue" />
+              <p class="choose-color_p">+2</p>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/rack4.jpg"
+                alt="Produkt framifrån orange"
+              />
+              <img
+                class="image-hover"
+                src="image/images/tjejrack04.jpg"
+                alt="Produkt från sidan orange"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Padelrack med bollpaket</div>
+            <div class="product-card_pris">4999 kr</div>
+            <div class="choose-color" id="active-color-picker">
+              <button
+                type="button"
+                class="color-option selected"
+                data-image="image/images/rack4.jpg"
+                data-hover-image="image/images/tjejrack04.jpg"
+                style="--swatch-color: #d8a180"
+                aria-label="beige"
+                aria-pressed="true"
+              ></button>
+              <button
+                type="button"
+                class="color-option"
+                data-image="image/images/Produktbild-1.png"
+                data-hover-image="image/images/Produktbild-2.png"
+                style="--swatch-color: #C0E703"
+                aria-label="green"
+                aria-pressed="false"
+              ></button>
+
+              <button
+                type="button"
+                class="color-option"
+                data-image="image/images/Produktbild-3.png"
+                data-hover-image="image/images/Produktbild.png"
+                style="--swatch-color: #2D99A3"
+                aria-label="blue"
+                aria-pressed="false"
+              ></button>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/solkräm04.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/solkrämthjej04.jpg"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Solkräm SPF 50+</div>
+            <div class="product-card_pris">259 kr</div>
+            <div class="choose-color">
+              <img src="image/Ikon/Färgprov 4.svg" alt="colorwhite" />
+              <img src="image/Ikon/Färgprov 1.svg" alt="colordarkblue" />
+              <img src="image/Ikon/Färgprov 2-1.svg" alt="colorlightblue" />
+              <p class="choose-color_p">+2</p>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/skor04.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/skortje04.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Padelskor</div>
+            <div class="product-card_pris">1299 kr</div>
+            <div class="choose-color">
+              <img src="image/Ikon/Färgprov yellow.svg" alt="yellow" />
+              <img src="image/Ikon/Färgprov 1-1.svg" alt="coloricon" />
+              <img src="image/Ikon/Färgprov 4-1.svg" alt="coloricon" />
+              <p class="choose-color_p">+2</p>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/keps.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/keps Produktbild.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Keps</div>
+            <div class="product-card_pris">399 kr</div>
+            <div class="choose-color">
+              <img src="image/Ikon/Färgprov 2.svg" alt="lightblue" />
+              <img src="image/Ikon/Färgprov 1-1.svg" alt="darkblue" />
+              <img src="image/Ikon/Färgprov yellownoborder.png" alt="yellow" />
+              <p class="choose-color_p">+2</p>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card_image">
+              <img
+                class="image-default"
+                src="image/images/vattenflaska.png"
+                alt="Produkt framifrån"
+              />
+              <img
+                class="image-hover"
+                src="image/images/vattenflask Produktbild.png"
+                alt="Produkt från sidan"
+              />
+              <button
+                class="product-card_heart"
+                type="button"
+                aria-label="Lägg till i favoriter"
+                aria-pressed="false"
+              >
+                <img src="image/Ikon/Heart.svg" alt="" />
+              </button>
+            </div>
+            <div class="product-card_name">Vattenflaska i aluminium</div>
+            <div class="product-card_pris">349 kr</div>
+            <div class="choose-color">
+              <img src="image/Ikon/Färgprov 2.svg" alt="lightblue" />
+              <img src="image/Ikon/Färgprov 1-1.svg" alt="darkblue" />
+              <img src="image/Ikon/yellownoborder.svg" alt="yellow" />
+              <p class="choose-color_p">+2</p>
+            </div>
+            <div class="product-card_extratext">
+              <p>Material och tillverkning</p>
+              <img src="image/Ikon/pil_ned.svg" alt="pil" />
+            </div>
+          </div>
+        </div>
+        <div class="products-next-page">
+          <a>Visa fler produkter</a>
+          <img src="image/Ikon/Arrow_next_page.svg" alt="arrow" />
+        </div>
       </section>
 
-      <div class="product-grid">
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-        <div class="product-card">
-          <div class="product-card_image">
-            <img src="" />
-          </div>
-          <div class="product-card_name">namn</div>
-          <div class="product-card_pris">pris</div>
-          <div class="choose-color">animation</div>
-        </div>
-      </div>
+      <section class="innovation">
+        <div class="innovation-carousel">
+          <!-- SLIDE 1 -->
+          <div class="innovation-slide innovation-slide-one active">
+            <picture class="innovation-image">
+              <source
+                media="(min-width: 1024px)"
+                srcset="image/images/innovation_slide_1.png"
+              />
+              <img src="image/images/mobile_innovation.png" alt="" />
+            </picture>
 
-      <section class="banner">
-        <h2 class="banner-title">SPÅR x KÄNDIS</h2>
-        <a href="#" class="banner-button"> Anmäl dig till event </a>
-        <div class="email"></div>
+            <div class="innovation-text">
+              <h2 class="innovation-text_slideone_h2">Designade för rörelse</h2>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 -->
+          <div class="innovation-slide innovation-slide-two">
+            <picture class="innovation-image">
+              <source
+                media="(min-width: 1024px)"
+                srcset="image/images/innovation_brillor.png"
+              />
+              <img
+                src="image/images/innovation_mobile_glasögon.png"
+                alt="Sportglasögon"
+              />
+            </picture>
+
+            <div class="innovation-text">
+              <h2 class="innovation-text_slidetwo_h2">
+                Se spelet från ett nytt perspektiv.
+              </h2>
+              <article>
+                <p>
+                  Med en integrerad kamera fångar SPÅR varje ögonblick ur ditt
+                  perspektiv.
+                </p>
+                <p>
+                  Spela in din träning, återupplev dina matcher och se
+                  detaljerna du missade mitt i spelet.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- SLIDE 3 -->
+          <div class="innovation-slide innovation-camera">
+            <video class="camera-video" autoplay muted loop playsinline>
+              <source src="video/camera.webm" type="video/webm" />
+            </video>
+
+            <div class="camera-text">
+              <h2 class="innovation-text_slidetwo_h2">
+                Avancerad teknik. Sömlöst integrerad.
+              </h2>
+
+              <article class="camera-text-description">
+                <p>
+                  Bakom designen arbetar en 4K-kamera med elektronisk
+                  bildstabilisering och vidvinkeloptik.
+                </p>
+                <p>
+                  Utvecklad för att fånga varje rörelse med hög detaljrikedom,
+                  även när tempot ökar.
+                </p>
+                <p>4K UHD · 60 FPS · 120° vidvinkel</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- NAVIGERING -->
+          <div class="innovation-controls">
+            <button
+              class="innovation-prev"
+              type="button"
+              aria-label="Föregående slide"
+            >
+              <img src="image/Ikon/tabler-icon-chevron-left.svg" alt="pil" />
+            </button>
+
+            <button
+              class="innovation-next"
+              type="button"
+              aria-label="Nästa slide"
+            >
+              <img src="image/Ikon/tabler-icon-chevron-right.svg" alt="pil" />
+            </button>
+
+            <div class="innovation-dots">
+              <button
+                class="innovation-dot active"
+                type="button"
+                aria-label="Visa slide 1"
+              ></button>
+
+              <button
+                class="innovation-dot"
+                type="button"
+                aria-label="Visa slide 2"
+              ></button>
+
+              <button
+                class="innovation-dot"
+                type="button"
+                aria-label="Visa slide 3"
+              ></button>
+            </div>
+          </div>
+        </div>
       </section>
-      <section class="body-text_content">
+
+      <section class="body-text">
         <p class="body-text_content">
-          Här är en text om märket och lite annat som kan vara bra att ha med.
+          Mer än bara padel. För oss handlar det om rörelse, personlig stil och
+          glädjen i att göra det man brinner för. <br><br>På banan, i vardagen och längs
+          vägen.
         </p>
       </section>
 
+      <section class="banner">
+        <img class="banner-image" src="image/images/banner.png" alt="" />
+        <div class="banner-content">
+          <div class="banner-text-content">
+            <h2 class="banner-title">
+              SPÅR
+              <span class="banner-x">x</span>
+              <span class="banner-title-name">Marta Ortega Gallego</span>
+            </h2>
+
+            <div class="banner-copy">
+              <p class="banner-intro">En kväll. Ett försprång.</p>
+
+              <p class="banner-description">
+                Vi bjuder in till en exklusiv förhandsvisning av vår limiterade
+                kollektion framtagen i ett samarbete med Marta Ortega Gallego.
+              </p>
+
+              <p class="banner-text">
+                Bli först med att upptäcka resultatet. Begränsat antal platser.
+              </p>
+
+              <p class="banner-text">
+                Registrera dig, så skickar vi tid och plats till din mejl.
+              </p>
+            </div>
+          </div>
+
+          <form id="banner-email-form" class="banner-form">
+            <label for="campaign-email" class="campaign-email-label">
+              E-postadress
+            </label>
+
+            <input
+              id="campaign-email"
+              class="campaign-email"
+              type="email"
+              name="email"
+              placeholder="namn@exempe.se"
+              required
+            />
+
+            <button type="submit" class="submit">Säkra din plats</button>
+          </form>
+        </div>
+      </section>
+
       <section class="review">
-        <h2 class="review-title">Kundrecensioner</h2>
+        <h2 class="review-title">
+          Vad våra kunder säger om oss och våra produkter
+        </h2>
 
-        <div class="review-grid">
-          <!-- Review card 1 -->
-          <article class="review-card">
-            <span class="review-quote" aria-hidden="true"></span>
+        <div class="review-carousel">
+          <button
+            class="review-arrow review-arrow-left"
+            type="button"
+            aria-label="Föregående recensioner"
+          >
+            <img src="image/Ikon/ArrowCircleLeft 2.svg" alt="" />
+          </button>
+          <div class="review-grid" id="review-grid">
+            <article class="review-card">
+              <img src="image/Ikon/Quote.svg" alt="" class="review-quote" />
 
-            <p class="review-card_text">
-              Jag är verkligen nöjd med den här produkten! Hade kanske önskat
-              att den skulle finnas i andra färger också :)
-            </p>
+              <p class="review-card_text">
+                Jag är verkligen nöjd med den här produkten! Hade kanske önskat
+                att den skulle finnas i andra färger också :)
+              </p>
 
-            <div class="review-card_stars" aria-label="4 av 5 stjärnor">
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="empty" aria-hidden="true">★</span>
-            </div>
+              <div class="review-card_stars" aria-label="4 av 5 stjärnor">
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="empty" aria-hidden="true">☆</span>
+              </div>
 
-            <p class="review-card_user">Anonym medlem</p>
+              <p class="review-card_user">Jasmin R.</p>
 
-            <a href="#" class="review-card_link"> Länk till produkt </a>
-          </article>
+              <a href="#category-grid" class="review-card_link">
+                Länk till produkt
+              </a>
+            </article>
 
-          <!-- Review card 2 -->
-          <article class="review-card">
-            <span class="review-quote" aria-hidden="true"></span>
+            <article class="review-card">
+              <img src="image/Ikon/Quote.svg" alt="" class="review-quote" />
 
-            <p class="review-card_text">
-              Allt är toppen! Produkterna lever verkligen upp till det man
-              hoppas och som utlovas. Högsta betyg!
-            </p>
+              <p class="review-card_text">
+                Allt är toppen! Produkterna lever verkligen upp till det man
+                hoppas och som utlovas. Högsta betyg!
+              </p>
 
-            <div class="review-card_stars" aria-label="4 av 5 stjärnor">
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="filled" aria-hidden="true">★</span>
-              <span class="empty" aria-hidden="true">☆</span>
-            </div>
+              <div class="review-card_stars" aria-label="5 av 5 stjärnor">
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+              </div>
 
-            <p class="review-card_user">Anonym medlem</p>
+              <p class="review-card_user">Anonym medlem</p>
 
-            <a href="#" class="review-card_link"> Länk till produkt </a>
-          </article>
+              <a href="#category-grid" class="review-card_link">
+                Länk till produkt
+              </a>
+            </article>
+
+            <article class="review-card">
+              <img src="image/Ikon/Quote.svg" alt="" class="review-quote" />
+
+              <p class="review-card_text">
+                Skorna jag beställde härifrån har varit över förväntan! Både
+                sköna och bra grepp på banan.
+              </p>
+
+              <div class="review-card_stars" aria-label="5 av 5 stjärnor">
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+              </div>
+
+              <p class="review-card_user">Josef K.</p>
+
+              <a href="#category-grid" class="review-card_link">
+                Länk till produkt
+              </a>
+            </article>
+
+            <article class="review-card">
+              <img src="image/Ikon/Quote.svg" alt="" class="review-quote" />
+
+              <p class="review-card_text">
+                Jag beställde shorts härifrån för ett tag sedan, plus för att de
+                hade fickor med dragkedja.
+              </p>
+
+              <div class="review-card_stars" aria-label="4 av 5 stjärnor">
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="filled" aria-hidden="true">★</span>
+                <span class="empty" aria-hidden="true">☆</span>
+              </div>
+
+              <p class="review-card_user">Linus Y.</p>
+
+              <a href="#category-grid" class="review-card_link">
+                Länk till produkt
+              </a>
+            </article>
+          </div>
+          <button
+            class="review-arrow review-arrow-right"
+            type="button"
+            aria-label="Nästa recensioner"
+          >
+            <img src="image/Ikon/ArrowCircleRight 2.svg" alt="" />
+          </button>
         </div>
       </section>
 
-      <h3>Kategorier</h3>
+      <div class="category-section" id="category-grid">
+        <h3 class="category-title">Kategorier</h3>
+        <section class="category-grid">
+          <div class="category-card">
+            <img
+              src="image/images/category 5.png"
+              alt=""
+              class="category-card_image"
+            />
+            <div class="category-card_content">
+              <h4 class="category-card_h4">Kläder</h4>
+              <button>Shoppa</button>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="image/images/category 08.png"
+              alt=""
+              class="category-card_image"
+            />
 
-      <section class="category-grid">
-        <div class="category-card">
-          <p class="category-card_text">liten beskrivning</p>
-          <h4 class="category-card_h4"></h4>
-          <button>Knapp</button>
-        </div>
-        <div class="category-card">
-          <p class="category-card_text">liten beskrivning</p>
-          <h4 class="category-card_h4"></h4>
-          <button>Knapp</button>
-        </div>
-        <div class="category-card">
-          <p class="category-card_text">liten beskrivning</p>
-          <h4 class="category-card_h4"></h4>
-          <button>Knapp</button>
-        </div>
-        <div class="category-card">
-          <p class="category-card_text">liten beskrivning</p>
-          <h4 class="category-card_h4"></h4>
-          <button>Knapp</button>
-        </div>
-      </section>
+            <div class="category-card_content">
+              <h4 class="category-card_h4">Skor</h4>
+              <button>Shoppa</button>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="image/images/categoricard_03.png"
+              alt=""
+              class="category-card_image"
+            />
+            <div class="category-card_content">
+              <h4 class="category-card_h4">Tillbehör</h4>
+              <button>Shoppa</button>
+            </div>
+          </div>
+          <div class="category-card">
+            <img
+              src="image/images/category 07.png"
+              alt=""
+              class="category-card_image"
+            />
+            <div class="category-card_content">
+              <h4 class="category-card_h4">Rack</h4>
+              <button>Shoppa</button>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer-one">
         <h5>Vi tänker längre än bara idag</h5>
-        <p>lksdlksdkl</p>
-        <a>läs mer</a>
+        <article class="footer-one-article_desktop">
+          På Spår tror vi på kraften i rörelse och innovation. Genom att förena
+          sport, stil och smart teknologi skapar vi funktionella och genomtänkta
+          produkter som är utvecklade för att prestera, inspirera och hålla över
+          tid. Med fokus på kvalitet, design och medvetna materialval vill vi
+          utmana det traditionella och bidra till en mer hållbar framtid. För
+          oss handlar det inte bara om hur du spelar, utan också om vilka spår
+          du lämnar efter dig.
+        </article>
+        <article class="footer-one-article_mobile">
+          Vi förenar stil, kvalitet och smart teknologi för att skapa hållbara
+          produkter som gör det enklare att välja en bättre framtid, för dig och
+          för miljön.
+        </article>
+        <a>Läs mer om hur vi arbetar med hållbarhet</a>
       </div>
       <div class="line"></div>
       <div class="footer-two-grid">
         <div class="footer-two-card">
           <h6>Kundservice</h6>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <a>Kontakta oss</a>
+          <a>Frågor och svar</a>
+          <a>Frakt och leverans</a>
+          <a>Byten och returer</a>
+          <a>Sök</a>
         </div>
         <div class="footer-two-card">
           <h6>Om oss</h6>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
-          <p></p>
+          <a>Vad är SPÅR?</a>
+          <a>Hållbarhet</a>
+          <a>Vår inspiration</a>
+          <a>Community</a>
+          <a>Press</a>
         </div>
         <div class="footer-two-card">
           <h6>Följ oss</h6>
-          <p></p>
-          <p></p>
-          <p></p>
+          <a>Instagram</a>
+          <a>Facebook</a>
+          <a>Youtube</a>
         </div>
       </div>
       <div class="footer-three">
-        <div class="footer-three_language">ENG/SV</div>
-        <div class="footer-three_logo">LOGO</div>
+        <div class="footer-three_left">
+          <img
+            class="footer-three_globe"
+            src="image/Ikon/Språk och land.svg"
+            alt="globe"
+          />
+          <div class="footer-three_language">SV / SE</div>
+        </div>
+        <img class="footer-three_logo" src="image/images/logo.png" alt="logo" />
       </div>
     </footer>
   </body>
